@@ -369,8 +369,8 @@
 
 \newcommand{\job}[3]{%
     \noindent
-    {\normalsize\bfseries\color{emphasis}#1\hfill #2\par}
-    {\normalsize\itshape\color{emphasis}#3}
+    {\large\bfseries\color{emphasis}#1\hfill #2\par}
+    {\large\itshape\color{emphasis}#3}
     \par\normalsize
 }
 
