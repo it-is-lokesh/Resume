@@ -1,0 +1,278 @@
+\documentclass[singlesided,
+               % doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+% \setlength\headerheight{2.8cm}          % keep the header compact so the full resume fits on page 1
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}
+% \setlength\margintop{0.5cm}
+% \setlength\marginbottom{1cm}
+\setlength\headerheight{3.8cm}
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont[
+  Path=/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/lm/,
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]{lmroman10}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Sai Lokesh Gorantla}
+\tagline{Embedded Software Engineer focused on building deep technical expertise through independent problem-solving and hands-on development. Proactive in taking ownership, optimizing solutions, and delivering reliable, high-performance software.}
+% \photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+\photo[round]{CV_image.jpeg}{3cm}   % vertically centered and as tall as the header
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \phone{+91 7330755757}
+    \email{g.sailokesh9@gmail.com}
+    % \location{Some Street 1, 12345 City Name}
+    % \vspace{0.5em}
+    \homepage{Homepage}{https://it-is-lokesh.github.io/portfolio/}
+    \github{@it-is-lokesh}{https://github.com/it-is-lokesh}
+    \linkedin{Sai Lokesh Gorantla}{https://www.linkedin.com/in/sai-lokesh-gorantla/}
+    % \orcid{0000-0003-1104-2014}{https://www.orcid.org/0000-0003-1104-2014}
+    % \ads{NASA/ADS publication list}{https://ui.adsabs.harvard.edu/search/fq=\%7B!type\%3Daqp\%20v\%3D\%24fq\_database\%7D&fq\_database=database\%3A\%20astronomy&p\_=0&q=pubdate\%3A\%5B2016-01\%20TO\%209999-12\%5D\%20author\%3A(\%22Krieger\%2C\%20Nico\%22)&sort=date\%20desc\%2C\%20bibcode\%20desc}
+    
+    \section{Skills}
+
+    \skillsection{\textbf{Competencies}}
+    \skillnodot{Embedded Software Development}
+    \skillnodot{Data Structures and Algorithms}
+    \skillnodot{Computer Vision Algorithms}
+    \skillnodot{DSP Optimization}
+    \skillnodot{Real-time Systems}
+    \skillnodot{Operating Systems}
+    \skillnodot{Computer Architecture}
+    \skillnodot{Memory-aware Programming}
+    \skillnodot{Agile Software Development (SDLC \& CI/CD)}
+
+    \vspace{0.5em}
+    \skillsection{\textbf{Programming Languages}}
+    \skillnodot{C}
+    \skillnodot{C++}
+    \skillnodot{Python}
+
+    \vspace{0.5em}
+    \skillsection{\textbf{Operating Systems}}
+    \skillnodot{Linux}
+    \skillnodot{RTOS}
+    \skillnodot{QNX}
+
+    \vspace{0.5em}
+    \skillsection{\textbf{Tools}}
+    \skillnodot{Git}
+    \skillnodot{Docker}
+
+    \vspace{0.5em}
+    \section{Education}
+    \education{Indian Institute of Technology, Kharagpur}
+        {B. Tech in Instrumentation Engineering}
+        {Micro-specialization in AI}
+        {8.41}
+        {\textit{2024}}
+    
+    \vspace{0.5em}
+    \section{Personal Details}
+    Address: Bengaluru - 560037 \\
+    Date of Birth: 16/12/2002 \\
+    Languages Known: English, Telugu, Hindi
+}
+
+\mainbar{
+    \section{Profile Summary}
+    \begin{itemize}
+        % \item Embedded Software Engineer with 2 years of experience developing performance-oriented software, supported by strong foundation in Data Structures and Algorithms, Computer Architecture, Operating Systems, and DSP Optimization.
+        \item \textbf{Embedded Software Engineer} with 2+ years of experience, specializing in developing \textbf{scalable} and \textbf{efficient} solutions for embedded platforms.
+        \item Strong foundation in \textbf{Computer Architecture}, \textbf{Operating Systems}, \textbf{Linux System Programming}, and \textbf{Memory Management}, with a proactive approach in solving complex engineering problems and building reliable solutions.
+        \item Expertise in \textbf{C/C++}, \textbf{DSP optimization}, including \textbf{SIMD vectorization}, \textbf{intrinsics}, \textbf{assembly-level tuning}, \textbf{fixed-point arithmetic}, and \textbf{cache-aware programming}.
+        \item Hands-on experience with \textbf{TI C7x DSP} platforms and \textbf{OpenVX}, working across \textbf{multi-core} applications utilizing \textbf{A72, C7x, and R5F} cores in production ADAS systems.
+        \item Proven track record of \textbf{profiling} and optimizing performance-critical computer vision workloads, including a \textbf{40x reduction in kernel latency} from 80ms to 2ms.
+        \item Skilled in diagnosing complex embedded software issues through \textbf{systematic debugging} and \textbf{root-cause analysis}, and delivering timely, reliable solutions.
+    \end{itemize}
+
+    \vspace{0.5em}
+    \section{Work history}
+    \job{Senior Software Engineer}
+        {September 2024 - Present}
+        {Aptiv India Pvt. Ltd.}
+    \textbf{Embedded Systems Software Development:}
+    \begin{itemize}
+        \item Architected and developed embedded software components across \textbf{Linux}, \textbf{QNX}, and \textbf{FreeRTOS} platforms, ensuring code quality, performance, and maintainability.
+        \item Leveraged \textbf{OpenVX} for developing ADAS applications in real-time environments, optimizing performance through efficient graph scheduling and buffer management.
+        \item Developed performance-critical modules by ensuring \textbf{synchronization} between processes and threads, reducing bugs in real-time execution and improving system stability.
+        \item Collaborated with cross-functional teams to integrate software components into production ADAS systems, ensuring seamless operation across \textbf{multi-core architectures}.
+        % \item Mentored junior engineers, providing guidance on best practices for embedded software development and performance optimization.
+    \end{itemize}
+    \textbf{High Performance Computing and DSP Optimization:}
+    \begin{itemize}
+        \item Improved throughput of computer vision algorithms and image-processing pipelines on \textbf{TI C7x DSP}.
+        \item Utilized \textbf{SIMD intrinsics}, \textbf{cache-aware software pipelining}, \textbf{DMA-based data transfers}, and memory reorganization to optimize performance.
+        \item Performed bottleneck analysis through \textbf{profiling} and benchmarking execution time of critical code sections to identify optimization opportunities.
+    \end{itemize}
+    \textbf{Achievements:}
+    \begin{itemize}
+        \item Reduced A72 CPU load by \textbf{10\%} and improved overall core utilization by migrating ADAS workloads from \textbf{ARM Cortex-A72 (Linux)} to \textbf{R5F (FreeRTOS)} through \textbf{OpenVX} graph restructuring.
+    \end{itemize}
+    % \vspace{0.5em}
+    
+    
+    }
+    \makebody
+    \clearpage
+    
+    
+    \pagestyle{highlightmain}
+    
+    % The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+    % For an empty highlightbar, fill with empty space
+    \highlightbar{\hfill}
+    \mainbar{
+        \begin{itemize}
+        \item Optimized compute-heavy \textbf{C++} kernels on \textbf{TI C7x DSP} using \textbf{SIMD intrinsics}, reducing execution latency from 80ms to 2ms.
+        \item Synchronized data communication between processes using semaphores and mutex, eliminating deadlocks and race conditions, thus enhancing code stability, scalability and reliability.
+        \item Profiled hotspots with TI C7x cycle counters, restructured loops for 32-lane C7x vectorization, and eliminated scalar gathers using vector predication.
+        \item Implemented an L2-cache-aware image processing pipeline on TI C7x DSP for multi-scale red-channel patch extraction using Streaming Engine (SE) and Data Routing Units (DRU), enabling efficient ping-pong buffering under cache constraints.
+    \end{itemize}
+    
+    \vspace{0.5em}
+    \section{Projects}
+    \job{Shared Memory Master}{}{}
+    \begin{itemize}
+        \item Designed a \textbf{middleware-independent} C++ execution framework to enable cross-compilation across multiple SoCs and built a synchronization bridge between \textbf{ROS processes} and native C++ applications using \textbf{mutex-controlled IPC}.
+        \item Architected a centralized \textbf{Shared Memory Master} that allocates sub-regions from a large pre-allocated memory pool, avoiding \textbf{4 KB page allocation overhead} and improving memory utilization in multi-threaded and multi-process environments.
+        \item Utilized \textbf{operator overloading in C++} to enable mathematical syntax while preserving performance through efficient memory usage.
+    \end{itemize}
+
+    \vspace{0.5em}
+    \job{Undergraduate Thesis}{}{}
+    \begin{itemize}
+        \item Designed controlled experiments to analyze behavior of \textbf{CNN-based encoder-decoder architectures} under weak supervision.
+        \item Conducted structured ablation studies to study \textbf{representation collapse} effects and quantify \textbf{kernel-level information dominance}.
+    \end{itemize}
+
+    \section{Publications}
+    \textbf{Sai Lokesh Gorantla}, Raviteja Sista, Apoorva Srivastava, Utpal De, Partha Pratim Chakrabarti, Debdoot Sheet. \textbf{Challenges
+    of Decomposing Tools in Surgical Scenes Through Disentangling Latent Representations} ICLR 2025 Workshop — Proceedings
+    of Machine Learning Research (PMLR), Vol. 296, pp. 130-140. \\
+    \href{https://openreview.net/forum?id=example}{[Paper]} \quad \href{https://github.com/it-is-lokesh}{[Code]}
+
+}
+\makebody
+\clearpage
+
+
+% \pagestyle{highlightmain}
+
+% % The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% % For an empty highlightbar, fill with empty space
+% \highlightbar{\hfill}
+% \mainbar{
+
+%     \section{Achievements, honours and awards}
+%     \achievement{My first achievement}
+%     \achievement{My second achievement}
+
+%     \section{General Skills}
+%     \smallskip
+%     \tag{Tag 1}
+%     \tag{Tag 2}
+%     \tag{and}
+%     \tag{another tag}
+%     \tag{some more tags}
+%     \tag{yet another one}
+%     \tag{tags flow over}
+%     \tag{to the next line}
+%     \tag{if necessary}
+
+%     \section{Wheel Chart}
+%     \wheelchart{1.5cm}{0.5cm}{%
+%         6/8em/accent!20/Sleep,
+%         8/8em/accent!40/Daytime job,
+%         2/8em/accent!80/Training,
+%         3/8em/accent!60/Recovering from fighting criminals,
+%         5/8em/accent/Being Batman
+%     }
+
+% }
+% \makebody
+
+
+% \clearpage
+% \pagestyle{empty}
+
+% \section{Publications}
+% \pubforcefullwidth
+
+% Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+% Also show off the macros for publications that uses small icons for authors, date, journal and links.
+
+% Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
+% The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+% \bigskip
+
+% \publication
+% 	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+% 	{2020} % Year
+% 	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+
+% \publication
+% 	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
+% 	{2020} % Year
+% 	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
+
+% \publication
+% 	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
+% 	{2019} % Year
+% 	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+
+\end{document}
