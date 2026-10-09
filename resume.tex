@@ -57,7 +57,7 @@
 \begin{document}
 
 \name{Sai Lokesh Gorantla}
-\tagline{Embedded Software Engineer focused on building deep technical expertise through independent problem-solving and hands-on development. Proactive in taking ownership, optimizing solutions, and delivering reliable, high-performance software.}
+\tagline{Embedded Software Engineer with 2+ years of experience at the intersection of computer vision, algorithm optimization, and embedded systems. Experienced in developing and optimizing performance-critical C/C++ workloads for ADAS applications on heterogeneous platforms.}
 \photo[round]{CV_image.jpeg}{3cm}
 
 \makeheader
@@ -84,6 +84,8 @@
     \skillnodot{Computer Architecture}
     \skillnodot{Memory-aware Programming}
     \skillnodot{Agile Software Development (SDLC \& CI/CD)}
+    \skillnodot{ARM/NEON Intrinsics}
+    \skillnodot{TI C7x Intrinsics}
 
     \vspace{0.5em}
     \skillsection{\textbf{Programming Languages}}
@@ -121,7 +123,8 @@
     \section{Profile Summary}
     \begin{itemize}
         \item \textbf{Embedded Software Engineer} with 2+ years of experience, specializing in developing \textbf{scalable} and \textbf{efficient} solutions for embedded platforms.
-        \item Strong foundation in \textbf{Computer Architecture}, \textbf{Operating Systems}, \textbf{Linux System Programming}, and \textbf{Memory Management}, with a proactive approach in solving complex engineering problems and building reliable solutions.
+        % \item Strong foundation in \textbf{Computer Architecture}, \textbf{Operating Systems}, \textbf{Linux System Programming}, and \textbf{Memory Management}, with a proactive approach in solving complex engineering problems and building reliable solutions.
+        \item Knowledge of training, exporting and deploying inference ML models on embedded hardware.
         \item Expertise in \textbf{C/C++}, \textbf{DSP optimization}, including \textbf{SIMD vectorization}, \textbf{intrinsics}, \textbf{assembly-level tuning}, \textbf{fixed-point arithmetic}, and \textbf{cache-aware programming}.
         \item Hands-on experience with \textbf{TI C7x DSP} platforms and \textbf{OpenVX}, working across \textbf{multi-core} applications utilizing \textbf{A72, C7x, and R5F} cores in production ADAS systems.
         \item Proven track record of \textbf{profiling} and optimizing performance-critical computer vision workloads, including a \textbf{40x reduction in kernel latency} from 80ms to 2ms.
@@ -152,6 +155,7 @@
     \textbf{Achievements:}
     \begin{itemize}
         \item Reduced A72 CPU load by \textbf{10\%} and improved overall core utilization by migrating ADAS workloads from \textbf{ARM Cortex-A72 (Linux)} to \textbf{R5F (FreeRTOS)} through \textbf{OpenVX} graph restructuring.
+        \item Trained a Neural Network for classification task in PyTorch through \textbf{Quantizatio-aware-trainig}, exported to ONNX runtime and deployed the model on embedded hardware.
     \end{itemize}
     }
 \makebody
@@ -170,20 +174,40 @@
     \end{itemize}
     
     \vspace{0.5em}
-    \section{Projects}
-    \job{Shared Memory Master}{}{}
+    \section{Internships and Projects}
+
+    \job{Data Science Intern}{}{Satsure Analytics}
+    {Project Title: Delineating farm boundaries from Sentinel-2 satellite data}
     \begin{itemize}
-        \item Designed a \textbf{middleware-independent} C++ execution framework to enable cross-compilation across multiple SoCs and built a synchronization bridge between \textbf{ROS processes} and native C++ applications using \textbf{mutex-controlled IPC}.
-        \item Architected a centralized \textbf{Shared Memory Master} that allocates sub-regions from a large pre-allocated memory pool, avoiding \textbf{4 KB page allocation overhead} and improving memory utilization in multi-threaded and multi-process environments.
-        \item Utilized \textbf{operator overloading in C++} to enable mathematical syntax while preserving performance through efficient memory usage.
+        \item {Streamlined data pipeline to fetch \textbf{Sentinel-2} imagery over Brazil, filtering for \textbf{minimal cloud cover}, reducing manual effort by 70\%}
+        \item {Designed a temporal \textbf{UNet with LSTM-based sequence modeling} to exploit seasonal agricultural patterns across 6 timestamps}
+        \item {Identified fragmented boundary predictions, fine-tuned the model with a \textbf{GAN-style discriminator} to enforce boundary completeness}
+        \item {Improved boundary detection quality significantly, increasing boundary \textbf{F1-score from 0.72 to 0.83} through the GAN-based fine tuning}
+    \end{itemize}
+    {Project Title: Detecting changes in vegetation cover across two timestamps}
+    \begin{itemize}
+        \item {Analyzed failure modes of a pre-trained vegetation detection model, identifying errors due to \textbf{dataset drift} as source of false detections}
+        \item {Developed a scalable pre-processing pipeline for anomalous regions using \textbf{HSV-based color shifts} and \textbf{histogram matching} to align testing imagery with the training data}
     \end{itemize}
 
     \vspace{0.5em}
     \job{Undergraduate Thesis}{}{}
     \begin{itemize}
+        \item Investigated the \textbf{limitations} of object-level disentanglement under \textbf{weak supervision}, despite architectural and objective constraints
+        \item Designed controlled \textbf{encoder-decoder} experiments to study how architectural choices shape capturing objects in latent representations
+        \item Formulated a \textbf{vMF(von-Mises-Fisher)} based method to test if angular separation is sufficient to achieve object-level disentanglement
+        \item Showed that background vMF kernels dominate information capture, with \textbf{kernel dynamics}, \textbf{entropy} and {feature assignment} patterns
         \item Designed controlled experiments to analyze behavior of \textbf{CNN-based encoder-decoder architectures} under weak supervision.
         \item Conducted structured ablation studies to study \textbf{representation collapse} effects and quantify \textbf{kernel-level information dominance}.
     \end{itemize}
+    
+    % \vspace{0.5em}
+    % \job{Shared Memory Master}{}{}
+    % \begin{itemize}
+    %     \item Designed a \textbf{middleware-independent} C++ execution framework to enable cross-compilation across multiple SoCs and built a synchronization bridge between \textbf{ROS processes} and native C++ applications using \textbf{mutex-controlled IPC}.
+    %     \item Architected a centralized \textbf{Shared Memory Master} that allocates sub-regions from a large pre-allocated memory pool, avoiding \textbf{4 KB page allocation overhead} and improving memory utilization in multi-threaded and multi-process environments.
+    %     \item Utilized \textbf{operator overloading in C++} to enable mathematical syntax while preserving performance through efficient memory usage.
+    % \end{itemize}
 
     \section{Publications}
     \textbf{Sai Lokesh Gorantla}, Raviteja Sista, Apoorva Srivastava, Utpal De, Partha Pratim Chakrabarti, Debdoot Sheet. \textbf{Challenges
